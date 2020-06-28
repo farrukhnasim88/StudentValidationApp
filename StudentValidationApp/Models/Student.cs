@@ -56,6 +56,11 @@ namespace StudentValidationApp.Models
         public int MobileNo { get; set; }
 
 
+        [Required (ErrorMessage ="Please select Student Type")]
+        [DisplayName("Student Type")]
+        public StudentType StudentType { get; set; }
+
+
 
     }
 }
